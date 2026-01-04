@@ -7,7 +7,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
+  --font-sans: var(--font-default);
   --font-mono: var(--font-geist-mono);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -116,11 +116,19 @@
   --sidebar-ring: oklch(0.552 0.016 285.938);
 }
 
+/* Apply smooth transitions to theme-related properties */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
 @layer base {
   * {
+    /* Smooth theme transitions */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
     @apply border-border outline-ring/50;
   }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
   }
 }
