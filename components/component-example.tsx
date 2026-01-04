@@ -69,16 +69,13 @@ import { HugeiconsIcon } from "@hugeicons/react"
 import { PlusSignIcon, BluetoothIcon, MoreVerticalCircle01Icon, FileIcon, FolderIcon, FolderOpenIcon, CodeIcon, MoreHorizontalCircle01Icon, SearchIcon, FloppyDiskIcon, DownloadIcon, EyeIcon, LayoutIcon, PaintBoardIcon, SunIcon, MoonIcon, ComputerIcon, UserIcon, CreditCardIcon, SettingsIcon, KeyboardIcon, LanguageCircleIcon, NotificationIcon, MailIcon, ShieldIcon, HelpCircleIcon, File01Icon, LogoutIcon } from "@hugeicons/core-free-icons"
 import { ModeToggle } from "./layout/modeToggle"
 import { DarkModeSwitch } from "./layout/dark-light-switch"
-import { Hero01 } from "./blocks/hero01"
-import { Experience1 } from "./blocks/experience"
 import DarkModeToggle from "../registry/new-york/dark-mode-switch"
 
 export function ComponentExample() {
   return (
     <ExampleWrapper>
       <DarkModeToggle />
-      <Hero01 />
-      <Experience1 />
+
       <DarkModeSwitch />
       <ModeToggle />
       <CardExample />
