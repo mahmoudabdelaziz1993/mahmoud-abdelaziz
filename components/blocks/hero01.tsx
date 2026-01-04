@@ -54,7 +54,7 @@ const Hero01 = ({ lang }: { lang: Lang }) => {
             </div>
             <div className="flex w-full aspect-square  mx-auto sm:mx-0 relative  sm:ring-0 order-first sm:order-last ">
                 <Image
-                    src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${heroContent.figure.url}`}
+                    src={`${process.env.NODE_ENV === 'production' ? '/mahmoud-abdelaziz' : ''}}${heroContent.figure.url}`}
                     alt={heroContent.figure.alt[lang]}
                     fill
                     className="dark:invert-0"
