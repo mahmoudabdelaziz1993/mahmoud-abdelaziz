@@ -1,14 +1,6 @@
-import { ArrowDownRight, Star } from "lucide-react";
-
-import { cn } from "@/lib/utils";
-
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import { DownloadResume } from "../downlaod-resume-button";
 import { ButtonGroup } from "../ui/button-group";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { Appointment02Icon } from "@hugeicons/core-free-icons";
 import Link from "next/link";
 import { heroContent, Lang } from "@/data/heroContent";
 
@@ -58,11 +50,11 @@ const Hero01 = ({ lang }: { lang: Lang }) => {
                 </div>
             </div>
             <div className="flex w-full aspect-square  mx-auto sm:mx-0 relative  sm:ring-0 order-first sm:order-last ">
-                <Image
+                <img
                     src={heroContent.figure.url}
                     alt={heroContent.figure.alt[lang]}
-                    fill
-                    className="dark:invert-0"
+
+                    className="dark:invert-0 object-cover w-full h-full"
                 />
             </div>
         </div>

@@ -1,12 +1,14 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
-  output: "export", // Crucial: generates fully static HTML files
-  basePath: "/mahmoud-abdelaziz", // Replace with your actual repo name (e.g., "/mahmoud-portfolio")
-  assetPrefix: "/mahmoud-abdelaziz/", // Fixes links to CSS/JS/images
+  output: isProd ? 'export' : undefined,
+  basePath: isProd ? '/mahmoud-abdelaziz' : '',
+  assetPrefix: isProd ? '/mahmoud-abdelaziz/' : '',
+  trailingSlash: true,
   images: {
-    unoptimized: true, // GitHub Pages doesn't support Next.js Image optimization
+    unoptimized: true,
   },
-  trailingSlash: true, // Helps with routing on GitHub Pages
 };
 
-export default nextConfig;
+export default nextConfig;  

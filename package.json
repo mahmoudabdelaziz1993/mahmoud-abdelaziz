@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export && touch out/.nojekyll",
+    "deploy": "gh-pages -d out",
     "start": "next start",
     "lint": "eslint",
     "registry:build": "shadcn build"
