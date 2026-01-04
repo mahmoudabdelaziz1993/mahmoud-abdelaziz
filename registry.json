@@ -1,0 +1,37 @@
+{
+    "$schema": "https://ui.shadcn.com/schema/registry.json",
+    "name": "mahmoud-abdelaziz-registry",
+    "homepage": "https://github.com/mahmoudabdelaziz1993/mahmoud-abdelaziz",
+    "items": [
+        {
+            "name": "dark-mode-switch",
+            "description": "An animated dark mode toggle with multiple animation styles",
+            "dependencies": [
+                "next-themes",
+                "motion"
+            ],
+            "registryDependencies": [
+                "button"
+            ],
+            "type": "registry:ui",
+            "files": [
+                {
+                    "path": "registry/new-york/dark-mode-switch/index.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        }
+    ],
+    "style": "new-york",
+    "rsc": true,
+    "tailwind": {
+        "config": "tailwind.config.ts",
+        "css": "app/globals.css",
+        "baseColor": "slate",
+        "cssVariables": true
+    },
+    "aliases": {
+        "components": "@/components",
+        "utils": "@/lib/utils"
+    }
+}

@@ -1,0 +1,330 @@
+{
+    "name": "Mahmoud Abdelaziz Slama",
+    "HeroSectionContent": {
+        "headline": {
+            "en": "React & Next.js Specialist: Crafting Fast, Elegant Apps That Users Actually Love",
+            "ar": "متخصص React وNext.js: أصمم تطبيقات سريعة وأنيقة يحبها المستخدمون فعلاً"
+        },
+        "paragraph": {
+            "en": "With over 5 years of hands-on experience, I turn complex requirements into intuitive, lightning-fast interfaces using modern JavaScript stacks. Clean code is my default, pixel-perfect UI is my standard, and smooth performance is non-negotiable. (Quiet dark joke: I debug faster than coffee goes cold on a Monday morning.) Ready to level up your project? Download my resume or book a quick call – let's build something great together.",
+            "ar": "بخبرة عملية تزيد عن 5 سنوات، أحول المتطلبات المعقدة إلى واجهات بديهية وسريعة كالبرق باستخدام أحدث تقنيات جافا سكريبت. الكود النظيف هو افتراضي عندي، الدقة البكسلية هي معياري، والأداء السلس غير قابل للتفاوض. (نكتة مظلمة هادئة: أصلح الأخطاء أسرع من برد القهوة صباح الإثنين.) جاهز لرفع مستوى مشروعك؟ قم بتنزيل سيرتي الذاتية أو احجز مكالمة سريعة – دعنا نبني شيئاً رائعاً معاً."
+        }
+    },
+    "skills": {
+        "en": [
+            "HyperText Markup Language (HTML)",
+            "Cascading Style Sheets (CSS)",
+            "JavaScript (JS Es6)",
+            "TypeScript (TS)",
+            "JS Libraries (e.g., React.js, Next.js, jQuery, lodash, momentjs)",
+            "CSS Frameworks (e.g., tailwindcss, Bootstrap, MUI)",
+            "CSS Preprocessors (e.g., Sass, LESS)",
+            "JavaScript module bundler (e.g., Webpack, Parcel, Vite)",
+            "State management (e.g., ContextApi, Redux)",
+            "Data Fetching Libraries (e.g., Axios, SWR, React Query)",
+            "Databases (e.g., MongoDB, postgresql)",
+            "Js Back end (e.g., Express, Next.js, GraphQL)",
+            "Version Control (e.g., Git)",
+            "Js package manager (e.g., NPM, Yarn)",
+            "Responsive Design & Mobile-First Websites",
+            "Search Engine Optimization (SEO)",
+            "Performance Testing, Load Testing & Debugging",
+            "Agile Methodology & SCRUM",
+            "backend as a service platforms (e.g., Firebase, Supabase)"
+        ],
+        "ar": [
+            "لغة ترميز النصوص الفائقة (HTML)",
+            "أوراق الأنماط المتتالية (CSS)",
+            "جافا سكريبت (JS ES6)",
+            "تايب سكريبت (TS)",
+            "مكتبات JS (مثل React.js، Next.js، jQuery، lodash، momentjs)",
+            "إطارات CSS (مثل tailwindcss، Bootstrap، MUI)",
+            "معالجات CSS المسبقة (مثل Sass، LESS)",
+            "حزمة وحدات جافا سكريبت (مثل Webpack، Parcel، Vite)",
+            "إدارة الحالة (مثل ContextApi، Redux)",
+            "مكتبات جلب البيانات (مثل Axios، SWR، React Query)",
+            "قواعد البيانات (مثل MongoDB، PostgreSQL)",
+            "الخلفية JS (مثل Express، Next.js، GraphQL)",
+            "التحكم في الإصدارات (مثل Git)",
+            "مدير حزم JS (مثل NPM، Yarn)",
+            "تصميم متجاوب ومواقع أولوية الموبايل",
+            "تحسين محركات البحث (SEO)",
+            "اختبار الأداء، اختبار الحمل والتصحيح",
+            "منهجية أجايل وSCRUM",
+            "منصات الخلفية كخدمة (مثل Firebase، Supabase)"
+        ]
+    },
+    "position": {
+        "en": "Front-End / React.js/ Next.js / Full Stack JS Developer",
+        "ar": "مطور الواجهة الأمامية / React.js / Next.js / مطور جافا سكريبت كامل الستاك"
+    },
+    "summary": {
+        "en": "Front-End Developer with 5+ years of experience crafting fast, elegant, and user-loved web apps using React and Next.js. Clean code, sharp UI, zero drama.",
+        "ar": "مطور واجهة أمامية بخبرة تزيد عن 5 سنوات في صياغة تطبيقات ويب سريعة وأنيقة ومحبوبة من المستخدمين باستخدام React وNext.js. كود نظيف، واجهة مستخدم حادة، بدون دراما."
+    },
+    "contact": {
+        "address": {
+            "en": "Badr City, Cairo, EG, 11829",
+            "ar": "مدينة بدر، القاهرة، مصر، 11829"
+        },
+        "phones": [
+            "+20 128 487 8080",
+            "+201006936354"
+        ],
+        "email": "mahmoudabdelaziz1993@outlook.com",
+        "linkedin": "https://bit.ly/3GSkKUu",
+        "portfolio": "https://bit.ly/3zdpWR4",
+        "github": "https://bit.ly/3auoShk",
+        "codesandbox": "https://bit.ly/3YZRSSX"
+    },
+    "education": [
+        {
+            "title": {
+                "en": "BSc Degree in Computer Science",
+                "ar": "درجة البكالوريوس في علوم الحاسب الآلي"
+            },
+            "institution": {
+                "en": "Menofia University",
+                "ar": "جامعة المنوفية"
+            },
+            "date": {
+                "en": "28 Jul 2016",
+                "ar": "28 يوليو 2016"
+            }
+        },
+        {
+            "title": {
+                "en": "Nanodegree in React Development Cross Skilling",
+                "ar": "نانوديغري في تطوير React عبر المهارات"
+            },
+            "institution": {
+                "en": "Udacity MENA",
+                "ar": "Udacity الشرق الأوسط وشمال أفريقيا"
+            },
+            "date": {
+                "en": "27 Jul 2022",
+                "ar": "27 يوليو 2022"
+            }
+        },
+        {
+            "title": {
+                "en": "JavaScript Algorithms and Data Structures",
+                "ar": "خوارزميات جافا سكريبت وبنى البيانات"
+            },
+            "institution": {
+                "en": "freecodecamp.org",
+                "ar": "freecodecamp.org"
+            },
+            "date": {
+                "en": "24 Feb 2023",
+                "ar": "24 فبراير 2023"
+            }
+        },
+        {
+            "title": {
+                "en": "Responsive Web Design",
+                "ar": "تصميم الويب المتجاوب"
+            },
+            "institution": {
+                "en": "freecodecamp.org",
+                "ar": "freecodecamp.org"
+            },
+            "date": {
+                "en": "7 Mar 2023",
+                "ar": "7 مارس 2023"
+            }
+        },
+        {
+            "title": {
+                "en": "Front End Development Libraries",
+                "ar": "مكتبات تطوير الواجهة الأمامية"
+            },
+            "institution": {
+                "en": "freecodecamp.org",
+                "ar": "freecodecamp.org"
+            },
+            "date": {
+                "en": "17 Mar 2023",
+                "ar": "17 مارس 2023"
+            }
+        }
+    ],
+    "languages": [
+        {
+            "language": "Arabic",
+            "level": {
+                "en": "Native",
+                "ar": "اللغة الأم"
+            }
+        },
+        {
+            "language": "English",
+            "level": {
+                "en": "Professional Working Proficiency",
+                "ar": "إجادة مهنية عملية"
+            }
+        }
+    ],
+    "experience": [
+        {
+            "title": {
+                "en": "Front End Developer @ sllm",
+                "ar": "مطور واجهة أمامية @ sllm"
+            },
+            "dates": {
+                "en": "2 Jun 2024 - Present",
+                "ar": "2 يونيو 2024 - الحاضر"
+            },
+            "descriptions": [
+                {
+                    "en": "Produced stunning visual elements of web applications by translating UI/UX design wireframes into code while producing high quality, reusable React.js components.",
+                    "ar": "أنتج عناصر بصرية مذهلة لتطبيقات الويب من خلال ترجمة إطارات تصميم UI/UX إلى كود مع إنتاج مكونات React.js عالية الجودة وقابلة لإعادة الاستخدام."
+                },
+                {
+                    "en": "Optimised front-end performance to ensure fast load times and seamless interactions across all devices.",
+                    "ar": "حسن أداء الواجهة الأمامية لضمان أوقات تحميل سريعة وتفاعلات سلسة عبر جميع الأجهزة."
+                },
+                {
+                    "en": "implemented intuitive user interfaces that allow users to effortlessly create and manage their online stores.",
+                    "ar": "نفذ واجهات مستخدم بديهية تسمح للمستخدمين بإنشاء وإدارة متاجرهم عبر الإنترنت بسهولة."
+                }
+            ]
+        },
+        {
+            "title": {
+                "en": "Front End Developer @ E2E County",
+                "ar": "مطور واجهة أمامية @ E2E County"
+            },
+            "dates": {
+                "en": "30 Sept 2023 - 30 May 2024",
+                "ar": "30 سبتمبر 2023 - 30 مايو 2024"
+            },
+            "descriptions": [
+                {
+                    "en": "Developed dynamic templates for customizable eCommerce websites, enhancing user experience and flexibility.",
+                    "ar": "طور قوالب ديناميكية لمواقع التجارة الإلكترونية القابلة للتخصيص، مما يعزز تجربة المستخدم والمرونة."
+                },
+                {
+                    "en": "Played a key role in implementing search engines for flights and hotels, enhancing the user experience and search efficiency.",
+                    "ar": "لعب دورًا رئيسيًا في تنفيذ محركات بحث للرحلات الجوية والفنادق، مما يعزز تجربة المستخدم وكفاءة البحث."
+                },
+                {
+                    "en": "Contributed to the development of search functionalities for flights and hotels, improving the search accuracy and user experience.",
+                    "ar": "ساهم في تطوير وظائف البحث للرحلات الجوية والفنادق، مما يحسن دقة البحث وتجربة المستخدم."
+                }
+            ]
+        },
+        {
+            "title": {
+                "en": "Front End Developer @ U100",
+                "ar": "مطور واجهة أمامية @ U100"
+            },
+            "dates": {
+                "en": "3 Oct 2022 - 21 Sept 2023",
+                "ar": "3 أكتوبر 2022 - 21 سبتمبر 2023"
+            },
+            "descriptions": [
+                {
+                    "en": "Produced stunning visual elements of web applications by translating UI/UX design wireframes into code while producing high quality, reusable React.js components.",
+                    "ar": "أنتج عناصر بصرية مذهلة لتطبيقات الويب من خلال ترجمة إطارات تصميم UI/UX إلى كود مع إنتاج مكونات React.js عالية الجودة وقابلة لإعادة الاستخدام."
+                },
+                {
+                    "en": "Built single page applications (SPA).",
+                    "ar": "بنى تطبيقات صفحة واحدة (SPA)."
+                },
+                {
+                    "en": "Generate static pages with Next.js.",
+                    "ar": "أنشأ صفحات ثابتة باستخدام Next.js."
+                },
+                {
+                    "en": "Ensure efficient web development by supporting designers and app developers while resolving website performance issues.",
+                    "ar": "ضمن تطوير ويب فعال من خلال دعم المصممين ومطوري التطبيقات أثناء حل مشكلات أداء الموقع."
+                }
+            ]
+        },
+        {
+            "title": {
+                "en": "Front End Developer @ One Tech Group - OTG",
+                "ar": "مطور واجهة أمامية @ One Tech Group - OTG"
+            },
+            "dates": {
+                "en": "1 Feb 2022 - 31 Aug 2022",
+                "ar": "1 فبراير 2022 - 31 أغسطس 2022"
+            },
+            "descriptions": [
+                {
+                    "en": "Successfully developed store fronts, product listings and improved overall UI and UX to an average increase in sales of 11% for all clients.",
+                    "ar": "طور بنجاح واجهات المتاجر وقوائم المنتجات وحسن الـUI والـUX بشكل عام لزيادة متوسط المبيعات بنسبة 11% لجميع العملاء."
+                },
+                {
+                    "en": "Developed and maintained web applications using React.js, HTML, CSS, and JavaScript. Increased user engagement by 25% and reduced loading time by 40%.",
+                    "ar": "طور وحافظ على تطبيقات الويب باستخدام React.js، HTML، CSS، وJavaScript. زاد تفاعل المستخدمين بنسبة 25% وقلل وقت التحميل بنسبة 40%."
+                },
+                {
+                    "en": "Designed dynamic and browser compatible pages using HTML5, CSS3, jQuery, and Javascript.",
+                    "ar": "صمم صفحات ديناميكية متوافقة مع المتصفحات باستخدام HTML5، CSS3، jQuery، وJavaScript."
+                }
+            ]
+        },
+        {
+            "title": {
+                "en": "Front End Developer @ One Solution",
+                "ar": "مطور واجهة أمامية @ One Solution"
+            },
+            "dates": {
+                "en": "1 Jun 2020 - 1 Jan 2022",
+                "ar": "1 يونيو 2020 - 1 يناير 2022"
+            },
+            "descriptions": [
+                {
+                    "en": "UX and business requirements were translated into attractive coding solutions.",
+                    "ar": "تم ترجمة متطلبات UX والأعمال إلى حلول برمجية جذابة."
+                },
+                {
+                    "en": "Found bottlenecks and bugs and proposed remedies.",
+                    "ar": "اكتشف العقبات والأخطاء واقترح علاجات."
+                },
+                {
+                    "en": "Assisting back end developers with problem solving and debugging.",
+                    "ar": "مساعدة مطوري الخلفية في حل المشكلات والتصحيح."
+                },
+                {
+                    "en": "HTML, CSS, Typescript, and JavaScript were used to provide functionality for both mobile and desktop platforms.",
+                    "ar": "تم استخدام HTML، CSS، TypeScript، وJavaScript لتوفير الوظائف لكل من المنصات المحمولة والمكتبية."
+                }
+            ]
+        },
+        {
+            "title": {
+                "en": "Full Stack Developer @ Pay Me",
+                "ar": "مطور كامل الستاك @ Pay Me"
+            },
+            "dates": {
+                "en": "2 Mar 2019 - 25 Aug 2019",
+                "ar": "2 مارس 2019 - 25 أغسطس 2019"
+            },
+            "descriptions": [
+                {
+                    "en": "Bring ideas and suggestions to team meetings and provide updates on deadlines, designs, and improvements.",
+                    "ar": "جلب الأفكار والاقتراحات إلى اجتماعات الفريق وتقديم تحديثات حول المواعيد النهائية والتصاميم والتحسينات."
+                },
+                {
+                    "en": "Review code, debug issues, and fix issues.",
+                    "ar": "مراجعة الكود، تصحيح المشكلات، وإصلاح الأخطاء."
+                },
+                {
+                    "en": "Adjust design parameters to incorporate new functionality.",
+                    "ar": "ضبط معلمات التصميم لدمج وظائف جديدة."
+                },
+                {
+                    "en": "Consult engineering team members to determine system load and develop improvement plans.",
+                    "ar": "استشارة أعضاء فريق الهندسة لتحديد حمل النظام وتطوير خطط التحسين."
+                },
+                {
+                    "en": "Work with backend developers to design APIs using Node.js and Typescript.",
+                    "ar": "العمل مع مطوري الخلفية لتصميم APIs باستخدام Node.js وTypeScript."
+                }
+            ]
+        }
+    ]
+}
