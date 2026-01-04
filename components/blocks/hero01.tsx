@@ -51,9 +51,8 @@ const Hero01 = ({ lang }: { lang: Lang }) => {
             </div>
             <div className="flex w-full aspect-square  mx-auto sm:mx-0 relative  sm:ring-0 order-first sm:order-last ">
                 <img
-                    src={heroContent.figure.url}
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${heroContent.figure.url}`}
                     alt={heroContent.figure.alt[lang]}
-
                     className="dark:invert-0 object-cover w-full h-full"
                 />
             </div>
