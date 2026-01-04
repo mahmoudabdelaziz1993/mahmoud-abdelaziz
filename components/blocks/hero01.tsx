@@ -1,4 +1,7 @@
+
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
+
 import { ButtonGroup } from "../ui/button-group";
 import { HugeiconsIcon } from "@hugeicons/react";
 import Link from "next/link";
@@ -50,10 +53,11 @@ const Hero01 = ({ lang }: { lang: Lang }) => {
                 </div>
             </div>
             <div className="flex w-full aspect-square  mx-auto sm:mx-0 relative  sm:ring-0 order-first sm:order-last ">
-                <img
-                    src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${heroContent.figure.url}`}
+                <Image
+                    src={heroContent.figure.url}
                     alt={heroContent.figure.alt[lang]}
-                    className="dark:invert-0 object-cover w-full h-full"
+                    fill
+                    className="dark:invert-0"
                 />
             </div>
         </div>
