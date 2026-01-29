@@ -32,7 +32,7 @@ export const heroContent = {
             ar: "احجز مكالمة"
         },
         icon: Appointment02Icon,
-        link: "https://cal.com/your-username"  // Replace with your Calendly/Cal.com link
+        link: "https://calendly.com/mahmoudabdelaziz1993/new-meeting"  // Replace with your Calendly/Cal.com link
     }
     , figure: {
         url: "/images/me-waving.png",
