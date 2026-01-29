@@ -1,5 +1,7 @@
+import Certifications from "@/components/blocks/certifications";
 import { Experience1 } from "@/components/blocks/experience";
 import { Hero01 } from "@/components/blocks/hero01";
+import { CertificationsSectionContent } from "@/data/certificationsContent";
 import { ExperienceSectionContent } from "@/data/ExperienceSectionContent";
 
 export default function ArPage() {
@@ -19,6 +21,18 @@ export default function ArPage() {
                         company: item.company[lang],
                         description: item.description[lang],
                     }))} />
+                </section>
+                {/* certifications */}
+                <section aria-label="certifications" id="certifications" className="flex items-center min-h-screen pt-16 w-full px-4">
+                    <Certifications headline={CertificationsSectionContent.headline[lang]}
+                        certifications={CertificationsSectionContent.certifications.map(item => ({
+                            title: item.title[lang],
+                            link: item.url,
+                            image: item.image,
+                            date: item.date[lang],
+                            institution: item.institution[lang]
+                        }))}
+                    />
                 </section>
             </div>
 
