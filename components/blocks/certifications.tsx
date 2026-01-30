@@ -7,7 +7,6 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
-/*************  ✨ Windsurf Command ⭐  *************/
 /**
  * A component to display a list of certifications.
  *
@@ -21,9 +20,7 @@ import Link from "next/link";
  * @param {string} certifications.institution - The institution that issued the certification.
  * @returns {React.ReactElement} - The rendered component.
  */
-/*******  6b71ccf8-3b9e-4c25-830b-466b3b8d9ca5  *******/
 export default function Certifications({
-    // experience,
     className,
     headline,
     certifications,
@@ -69,7 +66,7 @@ export default function Certifications({
                                     </HoverCardTrigger>
                                     <HoverCardContent>
                                         <Image
-                                            src={certification.image}
+                                            src={`${process.env.NODE_ENV === 'production' ? '/mahmoud-abdelaziz' : ''}${certification.image}`}
                                             alt={certification.title}
                                             width={500}
                                             height={500}
