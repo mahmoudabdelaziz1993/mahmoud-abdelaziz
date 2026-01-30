@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: 'Mahmoud Abdelaziz Portfolio',
     images: [
       {
-        url: `${process.env.NODE_ENV === 'production' ? '/mahmoud-abdelaziz' : ''}/images/Senior Front-End Developer.png`, // auto-prefixed with basePath
+        url: `${process.env.NODE_ENV === 'production' ? '/mahmoud-abdelaziz' : ''}/images/og.png`, // auto-prefixed with basePath
         width: 1200,
         height: 630,
         alt: 'Mahmoud Abdelaziz Slama - Front-End Developer Portfolio',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: 'Mahmoud Abdelaziz Slama | React & Next.js Expert',
     description:
       'Crafting fast, elegant web apps with React & Next.js. 5+ years experience. Portfolio live!',
-    images: [`${process.env.NODE_ENV === 'production' ? '/mahmoud-abdelaziz' : ''}/images/Senior Front-End Developer.png`], // or same as OG
+    images: [`${process.env.NODE_ENV === 'production' ? '/mahmoud-abdelaziz' : ''}/images/og.png`], // or same as OG
     creator: '@your-twitter-handle', // optional
   },
 
