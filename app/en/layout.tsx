@@ -1,9 +1,9 @@
+// app/en/layout.tsx
 import "./../globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import LanguageSwitcher from "@/components/language-switcher";
 import { Fira_Sans as Geist, Geist_Mono } from "next/font/google";
-import DarkModeSwitch from "@/registry/new-york/dark-mode-switch";
-import { Header } from "@/components/layout/Header";
+import { Header } from "@/components/blocks/Header";
+import { DirectionProvider } from "@/components/ui/direction";
 
 const geist = Geist({
     subsets: ["latin"],
@@ -30,15 +30,14 @@ export default function EnLayout({
                     enableSystem
                     disableTransitionOnChange
                 >
-                    {/* Header */}
-                    <Header
-                        lang="en"
-                    />
+                    <DirectionProvider dir="rtl">
 
-                    {/* Main content */}
-                    <main className="container space-y-10 lg:space-y-20 mx-auto max-w-5xl min-h-screen flex">
-                        {children}
-                    </main>
+
+                        {/* Main content */}
+                        <main className="grid container w-full lg:mx-auto max-w-5xl px-4">
+                            {children}
+                        </main>
+                    </DirectionProvider>
                 </ThemeProvider>
             </body>
         </html>

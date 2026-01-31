@@ -1,4 +1,4 @@
-// app/layout.tsx - EMPTY or minimal
+// app/layout.tsx 
 import { Metadata } from "next";
 import "./globals.css";
 export const metadata: Metadata = {

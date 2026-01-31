@@ -19,8 +19,8 @@ interface Experience1Props {
 const Experience1 = ({ className, experience, headline = "Experience" }: Experience1Props) => {
 
     return (
-        <section className={cn("py-32", className)}>
-            <div className="container space-y-10 lg:space-y-20">
+        <section id="experience" className={cn("py-20", className)}>
+            <div className="space-y-5 lg:space-y-10">
                 <div className="flex w-full items-end justify-between">
                     <h1 className="text-5xl font-semibold tracking-tighter ">
                         {headline}
@@ -34,9 +34,9 @@ const Experience1 = ({ className, experience, headline = "Experience" }: Experie
                     {experience.map((exp, index) => (
                         <li
                             key={index}
-                            className="flex flex-col justify-between border-b py-10 md:flex-row"
+                            className="flex flex-col justify-between border-b py-10 lg:flex-row"
                         >
-                            <div className="max-w-lg text-xl font-semibold tracking-tighter lg:w-1/3">
+                            <div className="max-w-lg text-xl font-semibold tracking-tighter lg:w-1/3 whitespace-nowrap text-muted-foreground">
                                 {exp.period}
                             </div>
                             <div className="lg:w-1/3">

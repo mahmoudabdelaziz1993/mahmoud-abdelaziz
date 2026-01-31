@@ -41,8 +41,8 @@ export default function Certifications({
 
 
     return (
-        <section className={cn("py-32 w-full", className)} >
-            <div className="container  space-y-10 lg:space-y-20">
+        <section id="certifications" className={cn("py-20", className)} >
+            <div className="space-y-5 lg:space-y-10" >
                 <div className="flex w-full items-end justify-between ">
                     <h1 className="text-5xl font-semibold tracking-tighter capitalize ">
                         {headline}
@@ -54,7 +54,7 @@ export default function Certifications({
                             key={index}
                             className="flex flex-col justify-between border-b py-10 md:flex-row"
                         >
-                            <div className="max-w-lg text-xl font-semibold tracking-tighter lg:w-1/3">
+                            <div className="max-w-lg text-xl font-semibold tracking-tighter lg:w-1/3 text-muted-foreground whitespace-nowrap">
                                 {certification.date}
                             </div>
                             <div className="lg:w-1/3">
