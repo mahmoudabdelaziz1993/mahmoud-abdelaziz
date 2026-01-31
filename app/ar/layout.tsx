@@ -32,7 +32,7 @@ export default function ArLayout({
 
 
                         {/* Main content */}
-                        <main className="container mx-auto max-w-5xl min-h-screen flex">
+                        <main className="grid container w-full lg:mx-auto max-w-5xl px-4">
 
                             {children}
                         </main>
