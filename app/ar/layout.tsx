@@ -1,10 +1,9 @@
+// app/ar/layout.tsx
 import "./../globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import LanguageSwitcher from "@/components/language-switcher";
 import { Beiruti as Cairo } from "next/font/google";
-import DarkModeSwitch from "@/registry/new-york/dark-mode-switch";
-import Head from "next/head";
-import { Header } from "@/components/layout/Header";
+import { Header } from "@/components/blocks/Header";
+import { DirectionProvider } from "@/components/ui/direction";
 
 const cairo = Cairo({
     subsets: ["arabic"],
@@ -26,16 +25,18 @@ export default function ArLayout({
                     enableSystem
                     disableTransitionOnChange
                 >
-                    {/* Header - RTL aligned */}
-                    <Header
-                        lang="ar"
-                    />
+                    <DirectionProvider dir="ltr">
+
+                        {/* Header - RTL aligned */}
 
 
-                    {/* Main content */}
-                    <main className="container mx-auto max-w-5xl min-h-screen flex">
-                        {children}
-                    </main>
+
+                        {/* Main content */}
+                        <main className="container mx-auto max-w-5xl min-h-screen flex">
+
+                            {children}
+                        </main>
+                    </DirectionProvider>
                 </ThemeProvider>
             </body>
         </html>
