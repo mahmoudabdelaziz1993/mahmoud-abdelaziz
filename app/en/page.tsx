@@ -1,6 +1,7 @@
 
 import Certifications from "@/components/blocks/certifications";
 import { Experience1 } from "@/components/blocks/experience";
+import { Footer } from "@/components/blocks/footer";
 import { Header } from "@/components/blocks/Header";
 import { HeroSection } from "@/components/blocks/hero";
 import { CertificationsSectionContent } from "@/data/certificationsContent";
@@ -13,13 +14,9 @@ export default function EnPage() {
     return (
         <>
             {/* Header */}
-            <Header
-                lang={lang}
-            />
+            <Header lang={lang} />
             {/* Hero */}
-            <HeroSection
-                lang={lang}
-            />
+            <HeroSection lang={lang} />
             {/* experience */}
             <Experience1 headline={ExperienceSectionContent.headline[lang]} experience={ExperienceSectionContent.experiences.map(item => ({
                 period: item.period[lang],
@@ -39,10 +36,8 @@ export default function EnPage() {
 
                 }))}
             />
-
-
-
-
+            {/* Footer */}
+            <Footer lang={lang} />
         </>
     );
 }

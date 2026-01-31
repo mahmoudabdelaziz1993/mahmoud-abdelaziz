@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Button } from '@/components/ui/button'
 import { HugeiconsIcon } from '@hugeicons/react'
-import { LanguageSquareIcon, TranslateIcon } from '@hugeicons/core-free-icons'
+import { LanguageCircleIcon } from '@hugeicons/core-free-icons'
 import { useEffect, useState } from 'react'
 
 export default function LanguageSwitcher() {
@@ -50,7 +50,7 @@ export default function LanguageSwitcher() {
                     variant="outline"
                     aria-label="Switch language"
                 >
-                    <HugeiconsIcon icon={TranslateIcon} />
+                    <HugeiconsIcon icon={LanguageCircleIcon} />
                     <span className="sr-only">
                         {currentLang === 'en' ? 'Switch language' : 'تبديل اللغة'}
                     </span>

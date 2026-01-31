@@ -1,11 +1,14 @@
 import { GithubIcon, Linkedin02Icon } from "@hugeicons/core-free-icons";
-import { label } from "motion/react-client";
 
 export const NavBarContent = {
     Logo: {
-        label: {
-            ar: "محمود عبد العزيز",
-            en: "Mahmoud Abdelaziz"
+        title: {
+            ar: "محمود عبد العزيز سلامة",
+            en: "Mahmoud Abdelaziz Slama"
+        },
+        subTitle: {
+            en: "Senior Front-End Developer",
+            ar: "مطور واجهة امامية اول (Senior)"
         }
     },
     SocialLinks: [
