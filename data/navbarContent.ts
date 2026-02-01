@@ -18,7 +18,7 @@ export const NavBarContent = {
                 ar: "لينكد ان",
                 en: "Linkedin"
             },
-            url: "https://linkedin.com"
+            url: "https://www.linkedin.com/in/mahmoud-abdelaziz-salama/"
         },
         {
             icon: GithubIcon,
@@ -26,7 +26,7 @@ export const NavBarContent = {
                 ar: "جيت هاب",
                 en: "Github"
             },
-            url: "https://github.com"
+            url: "https://github.com/mahmoudabdelaziz1993"
         }
     ]
 }

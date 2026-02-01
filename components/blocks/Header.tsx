@@ -1,11 +1,9 @@
-import LanguageSwitcher from "../language-switcher";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { ButtonGroup } from "../ui/button-group";
 import { Button } from "../ui/button";
 import { NavBarContent } from "@/data/navbarContent";
 import Link from "next/link";
-import { DarkModeSwitch } from "../layout/dark-light-switch";
-import Image from "next/image";
+
 
 export const Header = ({ lang }: { lang: "ar" | "en" }) => {
     return (
@@ -13,7 +11,7 @@ export const Header = ({ lang }: { lang: "ar" | "en" }) => {
             <div className="container lg:mx-auto max-w-5xl  px-4 py-3 flex justify-between items-center flex-wrap ">
                 {/* Logo section text  */}
                 <div className="flex-1">
-                    <Link href={`/${lang}`} >
+                    <Link href={`/${lang}`} aria-label="Mahmoud Abdelaziz Slama Portfolio" >
                         <div className="flex items-center">
                             <div className="size-10 grid place-items-center">
                                 <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -52,7 +50,7 @@ export const Header = ({ lang }: { lang: "ar" | "en" }) => {
                             size={"icon"}
                             asChild
                         >
-                            <Link target='_blank' href={url} rel="noopener noreferrer">
+                            <Link aria-label={label[lang]} target='_blank' href={url} rel="noopener noreferrer">
                                 <HugeiconsIcon icon={icon} />
                             </Link>
                         </Button>

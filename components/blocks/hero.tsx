@@ -5,9 +5,10 @@ import { ButtonGroup } from "../ui/button-group";
 import { HugeiconsIcon } from "@hugeicons/react";
 import Link from "next/link";
 import { heroContent, Lang } from "@/data/heroContent";
-const HeroSection = ({ lang }: { lang: Lang }) => {
+import { cn } from "@/lib/utils";
+const HeroSection = ({ lang, className }: { lang: Lang, className?: string }) => {
     return (
-        <section aria-label="hero" id="hero" className="grid  place-items-center h-screen w-full">
+        <section aria-label="hero" id="hero" className={cn("grid  place-items-center h-screen w-full", className)}>
             {/* container */}
             <div className="container mx-auto sm:mx-0 flex flex-col  justify-center sm:items-center items-end  gap-0 lg:flex-row  lg:gap-20 ">
                 {/* content  */}
@@ -15,7 +16,7 @@ const HeroSection = ({ lang }: { lang: Lang }) => {
                     <h1 className="sm:my-6 my-3  sm:text-5xl text-3xl  font-bold text-pretty ltr:tracking-tight  ">
                         {heroContent.headline[lang]}
                     </h1>
-                    <p className="sm:mb-8  mb-4 text-base text-foreground/50">
+                    <p className="sm:mb-8  mb-4 text-sm text-muted-foreground">
                         {heroContent.paragraph[lang]}
                     </p>
                     <div className="">
@@ -37,7 +38,7 @@ const HeroSection = ({ lang }: { lang: Lang }) => {
                             </ButtonGroup>
                             <ButtonGroup>
                                 <Button
-                                    variant={'outline'}
+                                    variant={'secondary'}
                                     aria-labelledby={heroContent.callButton.label[lang]}
                                     asChild
                                 >
