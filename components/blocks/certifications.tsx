@@ -22,12 +22,10 @@ import { Badge } from "@/components/ui/badge";
  * @returns {React.ReactElement} - The rendered component.
  */
 export default function Certifications({
-    className,
-    headline,
+
     certifications,
 }: {
-    className?: string,
-    headline?: string,
+
     certifications: {
         title: string;
         link: string;
@@ -42,46 +40,37 @@ export default function Certifications({
 
 
     return (
-        <section id="certifications" className={cn("py-20", className)} >
-            <div className="space-y-5 lg:space-y-10" >
-                <div className="flex w-full items-end justify-between ">
-                    <h1 className="text-5xl font-semibold tracking-tighter capitalize ">
-                        {headline}
-                    </h1>
-                </div>
-                <ul>
-                    {certifications.map((certification, index) => (
-                        <li
-                            key={index}
-                            className="flex flex-col justify-between border-b-2 py-10 md:flex-row"
-                        >
-                            <div className="max-w-lg text-xl font-semibold tracking-tighter lg:w-1/3 text-muted-foreground whitespace-nowrap">
-                                <Badge variant={'outline'}> {certification.date}</Badge>
-                            </div>
-                            <div className="lg:w-1/3">
-                                <HoverCard>
-                                    <HoverCardTrigger asChild>
-                                        <Link href={certification.link} target="_blank" className="mb-4 text-2xl font-semibold tracking-tighter">
-                                            {certification.title}
-                                        </Link>
-                                    </HoverCardTrigger>
-                                    <HoverCardContent>
-                                        <Image
-                                            src={`${process.env.NODE_ENV === 'production' ? '/mahmoud-abdelaziz' : ''}${certification.image}`}
-                                            alt={certification.title}
-                                            width={500}
-                                            height={500}
-                                        />
-                                    </HoverCardContent>
-                                </HoverCard>
+        <ul>
+            {certifications.map((certification, index) => (
+                <li
+                    key={index}
+                    className="flex flex-col justify-between border-b-2 py-10 md:flex-row"
+                >
+                    <div className="max-w-lg text-xl font-semibold tracking-tighter lg:w-1/3 text-muted-foreground whitespace-nowrap">
+                        <Badge variant={'outline'}> {certification.date}</Badge>
+                    </div>
+                    <div className="lg:w-1/3">
+                        <HoverCard>
+                            <HoverCardTrigger asChild>
+                                <Link href={certification.link} target="_blank" className="mb-4 text-2xl font-semibold tracking-tighter">
+                                    {certification.title}
+                                </Link>
+                            </HoverCardTrigger>
+                            <HoverCardContent>
+                                <Image
+                                    src={`${process.env.NODE_ENV === 'production' ? '/mahmoud-abdelaziz' : ''}${certification.image}`}
+                                    alt={certification.title}
+                                    width={500}
+                                    height={500}
+                                />
+                            </HoverCardContent>
+                        </HoverCard>
 
-                            </div>
-                            <div className="text-sm font-semibold text-end lg:w-1/3">{certification.institution}</div>
-                        </li>
-                    ))}
-                </ul>
+                    </div>
+                    <div className="text-sm font-semibold text-end lg:w-1/3">{certification.institution}</div>
+                </li>
+            ))}
+        </ul>
 
-            </div>
-        </section>
     )
 }

@@ -10,7 +10,7 @@ const HeroSection = ({ lang, className }: { lang: Lang, className?: string }) =>
     return (
         <section aria-label="hero" id="hero" className={cn("grid  place-items-center h-screen w-full", className)}>
             {/* container */}
-            <div className="container mx-auto sm:mx-0 flex flex-col  justify-center sm:items-center items-end  gap-0 lg:flex-row  lg:gap-20 ">
+            <div className="container mx-auto sm:mx-0 flex flex-col  justify-center items-center lg:items-end  gap-0 lg:flex-row  lg:gap-20 ">
                 {/* content  */}
                 <div className=" flex lg:w-1/2 flex-col items-center text-center  lg:max-w-3xl lg:items-start  lg:ltr:text-left lg:rtl:text-right ">
                     <h1 className="sm:my-6 my-3  sm:text-5xl text-3xl  font-bold text-pretty ltr:tracking-tight  ">
@@ -58,7 +58,10 @@ const HeroSection = ({ lang, className }: { lang: Lang, className?: string }) =>
                         src={`${process.env.NODE_ENV === 'production' ? '/mahmoud-abdelaziz' : ''}${heroContent.figure.url}`}
                         alt={heroContent.figure.alt[lang]}
                         fill
+                        preload
+                        loading="eager"
                         className="dark:invert-0"
+                        fetchPriority="high"
                     />
                 </div>
             </div>

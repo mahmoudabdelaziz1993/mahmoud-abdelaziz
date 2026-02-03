@@ -1,6 +1,7 @@
 import { title } from "process";
 
 export const CertificationsSectionContent = {
+    key: "Certifications",
     headline: {
         en: "Certifications",
         ar: "الشهادات"

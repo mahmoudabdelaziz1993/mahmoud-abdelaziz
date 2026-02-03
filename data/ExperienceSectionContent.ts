@@ -1,4 +1,5 @@
 export const ExperienceSectionContent = {
+    key: "Experience",
 
     headline: {
         "en": "Experience",
