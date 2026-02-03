@@ -20,9 +20,9 @@ export default function EnPage() {
             <Header lang={lang} />
             {/* Hero */}
             <HeroSection lang={lang} />
-            {/* TECHNICAL SKILLS*/}
+            {/* Skils */}
             <SectionLayout sectionId={SkilsContent.key} sectionTitle={SkilsContent.headline[lang]} className=" overflow-clip">
-                <div className="flex-1 grid place-items-center">
+                <div className="flex-1 grid place-items-center pt-10">
                     <div className="grid  w-full">
                         <CurvedLoop marqueeText={SkilsContent.list.slice(0, Math.ceil(SkilsContent.list.length / 2)).join(" ✦ ")} curveAmount={-300} direction="right" />
                         <CurvedLoop marqueeText={SkilsContent.list.slice(Math.ceil(SkilsContent.list.length / 2)).join(" ✦ ")} curveAmount={300} direction="left" />

@@ -3,9 +3,11 @@ import { Experience1 } from "@/components/blocks/experience";
 import { Footer } from "@/components/blocks/footer";
 import { Header } from "@/components/blocks/Header";
 import { HeroSection } from "@/components/blocks/hero";
+import CurvedLoop from "@/components/CurvedLoop";
 import SectionLayout from "@/components/layout/section-layout";
 import { CertificationsSectionContent } from "@/data/certificationsContent";
 import { ExperienceSectionContent } from "@/data/ExperienceSectionContent";
+import { SkilsContent } from "@/data/skils";
 
 export default function ArPage() {
     const lang = "ar";
@@ -15,6 +17,15 @@ export default function ArPage() {
             <Header lang={lang} />
             {/* Hero */}
             <HeroSection lang={lang} />
+            {/* Skils */}
+            <SectionLayout sectionId={SkilsContent.key} sectionTitle={SkilsContent.headline[lang]} className=" overflow-clip">
+                <div className="flex-1 grid place-items-center pt-10">
+                    <div className="grid  w-full" dir="ltr">
+                        <CurvedLoop marqueeText={SkilsContent.list.slice(0, Math.ceil(SkilsContent.list.length / 2)).join(" ✦ ")} curveAmount={-300} direction="right" />
+                        <CurvedLoop marqueeText={SkilsContent.list.slice(Math.ceil(SkilsContent.list.length / 2)).join(" ✦ ")} curveAmount={300} direction="left" />
+                    </div>
+                </div>
+            </SectionLayout>
             {/* experience */}
             <SectionLayout sectionId={ExperienceSectionContent.key} sectionTitle={ExperienceSectionContent.headline[lang]}>
                 <Experience1 experience={ExperienceSectionContent.experiences.map(item => ({
