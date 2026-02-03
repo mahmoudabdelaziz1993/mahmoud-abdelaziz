@@ -118,7 +118,7 @@ const CurvedLoop: FC<CurvedLoopProps> = ({
       onPointerLeave={endDrag}
     >
       <svg
-        className="select-none w-full overflow-visible block aspect-100/12 text-8xl font-extrabold uppercase leading-none"
+        className="select-none w-full overflow-visible block aspect-100/12 sm:text-[10vh] text-[20vh] font-extrabold uppercase leading-none"
         viewBox="0 0 1440 120"
       >
         <text ref={measureRef} xmlSpace="preserve" style={{ visibility: 'hidden', opacity: 0, pointerEvents: 'none' }}>
