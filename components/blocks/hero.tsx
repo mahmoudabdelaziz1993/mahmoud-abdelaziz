@@ -53,7 +53,7 @@ const HeroSection = ({ lang, className }: { lang: Lang, className?: string }) =>
                     </div>
                 </div>
                 {/* figure */}
-                <div className="flex w-1/2 aspect-3/5  mx-auto lg:mx-0 relative  sm:ring-0 order-first lg:order-last ">
+                <div className="flex sm:w-sm w-1/2 aspect-3/5  mx-auto lg:mx-0 relative  sm:ring-0 order-first lg:order-last ">
                     <Image
                         src={`${process.env.NODE_ENV === 'production' ? '/mahmoud-abdelaziz' : ''}${heroContent.figure.url}`}
                         alt={heroContent.figure.alt[lang]}
