@@ -35,7 +35,7 @@ export const heroContent = {
         link: "https://calendly.com/mahmoudabdelaziz1993/new-meeting"  // Replace with your Calendly/Cal.com link
     }
     , figure: {
-        url: "/images/me-coding.png",
+        url: "/images/me-waving.webp",
         alt: {
             en: "Mahmoud Abdelaziz waving",
             ar: "محمود عبد العزيز بيسلم"
