@@ -5,7 +5,7 @@ interface CurvedLoopProps {
   marqueeText?: string;
   speed?: number;
   className?: string;
-  curveAmount?: number;
+  curveAmount?: number; // Adjust this for wave height (e.g., 100-200)
   direction?: 'left' | 'right';
   interactive?: boolean;
 }
@@ -14,7 +14,7 @@ const CurvedLoop: FC<CurvedLoopProps> = ({
   marqueeText = '',
   speed = 2,
   className,
-  curveAmount = 400,
+  curveAmount = 150,
   direction = 'left',
   interactive = true
 }) => {
@@ -25,12 +25,28 @@ const CurvedLoop: FC<CurvedLoopProps> = ({
 
   const measureRef = useRef<SVGTextElement | null>(null);
   const textPathRef = useRef<SVGTextPathElement | null>(null);
-  const pathRef = useRef<SVGPathElement | null>(null);
   const [spacing, setSpacing] = useState(0);
   const [offset, setOffset] = useState(0);
   const uid = useId();
-  const pathId = `curve-${uid}`;
-  const pathD = `M-100,40 Q500,${40 + curveAmount} 1540,40`;
+  const pathId = `wave-${uid}`;
+
+  // 1. IMPROVED VIEWBOX & PATH: 
+  // We use a taller viewBox (400) so the wave has room to breathe on mobile.
+  const viewBoxHeight = 400;
+  const centerY = viewBoxHeight / 2;
+
+  const pathD = useMemo(() => {
+    const startX = -200;
+    const endX = 1640;
+    const width = endX - startX;
+    const halfWidth = width / 2;
+    const quarterWidth = width / 4;
+
+    // Creates a smooth "S" wave (up then down)
+    return `M${startX},${centerY} 
+            Q${startX + quarterWidth},${centerY - curveAmount} ${startX + halfWidth},${centerY}
+            T${endX},${centerY}`;
+  }, [curveAmount, centerY]);
 
   const dragRef = useRef(false);
   const lastXRef = useRef(0);
@@ -39,24 +55,13 @@ const CurvedLoop: FC<CurvedLoopProps> = ({
 
   const textLength = spacing;
   const totalText = textLength
-    ? Array(Math.ceil(1800 / textLength) + 2)
-      .fill(text)
-      .join('')
+    ? Array(Math.ceil(3000 / textLength) + 3).fill(text).join('')
     : text;
   const ready = spacing > 0;
 
   useEffect(() => {
     if (measureRef.current) setSpacing(measureRef.current.getComputedTextLength());
   }, [text, className]);
-
-  useEffect(() => {
-    if (!spacing) return;
-    if (textPathRef.current) {
-      const initial = -spacing;
-      textPathRef.current.setAttribute('startOffset', initial + 'px');
-      setOffset(initial);
-    }
-  }, [spacing]);
 
   useEffect(() => {
     if (!spacing || !ready) return;
@@ -66,9 +71,8 @@ const CurvedLoop: FC<CurvedLoopProps> = ({
         const delta = dirRef.current === 'right' ? speed : -speed;
         const currentOffset = parseFloat(textPathRef.current.getAttribute('startOffset') || '0');
         let newOffset = currentOffset + delta;
-        const wrapPoint = spacing;
-        if (newOffset <= -wrapPoint) newOffset += wrapPoint;
-        if (newOffset > 0) newOffset -= wrapPoint;
+        if (newOffset <= -spacing) newOffset += spacing;
+        if (newOffset > 0) newOffset -= spacing;
         textPathRef.current.setAttribute('startOffset', newOffset + 'px');
         setOffset(newOffset);
       }
@@ -78,11 +82,11 @@ const CurvedLoop: FC<CurvedLoopProps> = ({
     return () => cancelAnimationFrame(frame);
   }, [spacing, speed, ready]);
 
+  // Pointer Handlers... (Keep your existing onPointerDown, Move, and endDrag)
   const onPointerDown = (e: PointerEvent) => {
     if (!interactive) return;
     dragRef.current = true;
     lastXRef.current = e.clientX;
-    velRef.current = 0;
     (e.target as HTMLElement).setPointerCapture(e.pointerId);
   };
 
@@ -93,43 +97,40 @@ const CurvedLoop: FC<CurvedLoopProps> = ({
     velRef.current = dx;
     const currentOffset = parseFloat(textPathRef.current.getAttribute('startOffset') || '0');
     let newOffset = currentOffset + dx;
-    const wrapPoint = spacing;
-    if (newOffset <= -wrapPoint) newOffset += wrapPoint;
-    if (newOffset > 0) newOffset -= wrapPoint;
+    if (newOffset <= -spacing) newOffset += spacing;
+    if (newOffset > 0) newOffset -= spacing;
     textPathRef.current.setAttribute('startOffset', newOffset + 'px');
     setOffset(newOffset);
   };
 
   const endDrag = () => {
-    if (!interactive) return;
     dragRef.current = false;
-    dirRef.current = velRef.current > 0 ? 'right' : 'left';
+    if (Math.abs(velRef.current) > 1) dirRef.current = velRef.current > 0 ? 'right' : 'left';
   };
-
-  const cursorStyle = interactive ? (dragRef.current ? 'grabbing' : 'grab') : 'auto';
 
   return (
     <div
-      className=" flex-1 flex items-center justify-center w-full"
-      style={{ visibility: ready ? 'visible' : 'hidden', cursor: cursorStyle }}
+      className="flex items-center justify-center w-full min-h-[200px]"
+      style={{ visibility: ready ? 'visible' : 'hidden' }}
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={endDrag}
       onPointerLeave={endDrag}
     >
       <svg
-        className="select-none w-full overflow-visible block aspect-100/12 sm:text-[10vh] text-[20vh] font-extrabold uppercase leading-none"
-        viewBox="0 0 1440 120"
+        // Changed: Removed aspect-100/12, increased height via viewBox
+        className="select-none w-full h-auto overflow-visible block text-[120px] sm:text-[80px] font-black uppercase"
+        viewBox={`0 0 1440 ${viewBoxHeight}`}
       >
-        <text ref={measureRef} xmlSpace="preserve" style={{ visibility: 'hidden', opacity: 0, pointerEvents: 'none' }}>
+        <text ref={measureRef} xmlSpace="preserve" className="opacity-0 pointer-events-none">
           {text}
         </text>
         <defs>
-          <path ref={pathRef} id={pathId} d={pathD} fill="none" stroke="transparent" />
+          <path id={pathId} d={pathD} fill="none" />
         </defs>
         {ready && (
-          <text xmlSpace="preserve" className={`fill-foreground ${className ?? ''}`}>
-            <textPath ref={textPathRef} href={`#${pathId}`} startOffset={offset + 'px'} xmlSpace="preserve">
+          <text className={`fill-current ${className ?? ''}`}>
+            <textPath ref={textPathRef} href={`#${pathId}`} startOffset={offset + 'px'}>
               {totalText}
             </textPath>
           </text>
