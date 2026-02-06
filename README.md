@@ -1,6 +1,6 @@
 # Mahmoud Abdelaziz's Portfolio
 
-![Portfolio Screenshot](https://via.placeholder.com/800x400?text=Portfolio+Hero+Section) <!-- Replace with actual screenshot URL if available -->
+![Portfolio Screenshot]([https://via.placeholder.com/800x400?text=Portfolio+Hero+Section](https://github.com/mahmoudabdelaziz1993/mahmoud-abdelaziz/blob/scroll-snap/public/images/screencapture.png)) <!-- Replace with actual screenshot URL if available -->
 
 A modern, responsive personal portfolio website built with Next.js and Shadcn UI in TypeScript. This site showcases my expertise as a Senior Frontend Developer with 5+ years in React.js, Next.js, and TypeScript, focusing on high-performance SaaS and e-commerce platforms.
 
