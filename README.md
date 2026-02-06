@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mahmoud Abdelaziz's Portfolio
+
+![Portfolio Screenshot](https://github.com/mahmoudabdelaziz1993/mahmoud-abdelaziz/blob/scroll-snap/public/images/screencapture.png) <!-- Replace with actual screenshot URL if available -->
+
+A modern, responsive personal portfolio website built with Next.js and Shadcn UI in TypeScript. This site showcases my expertise as a Senior Frontend Developer with 5+ years in React.js, Next.js, and TypeScript, focusing on high-performance SaaS and e-commerce platforms.
+
+Live Demo: [https://mahmoudabdelaziz1993.github.io/mahmoud-abdelaziz/ar](https://mahmoudabdelaziz1993.github.io/mahmoud-abdelaziz/ar) (Arabic version; English support available via localization).
+
+Connect to GitHub Repo: [https://github.com/mahmoudabdelaziz1993/mahmoud-abdelaziz](https://github.com/mahmoudabdelaziz1993/mahmoud-abdelaziz)
+
+## Features
+
+- **Bilingual Support**: Seamless localization for English and Arabic, making it accessible for GCC markets.
+- **Dark Mode Toggle**: User-friendly theme switching with Shadcn UI components.
+- **Responsive Design**: Mobile-first approach with Tailwind CSS for optimal viewing on all devices.
+- **Sections Included**:
+  - Hero introduction with professional summary.
+  - Professional experience timeline.
+  - Technical skills showcase.
+  - Certifications list.
+  - Interactive elements like curved paths and scroll-snap for enhanced UX.
+- **Performance Optimizations**: Server-side rendering (SSR), static generation, and code-splitting via Next.js.
+- **Accessibility**: WCAG-compliant components for inclusive user experience.
+
+## Tech Stack
+
+- **Core**: Next.js (React framework for SSR/SSG), TypeScript (for type safety).
+- **UI/Styling**: Shadcn UI, Tailwind CSS.
+- **State Management**: Built-in React hooks; extensible for Redux Toolkit if needed.
+- **Tools**: pnpm (package manager), ESLint (linting), Git (version control).
+- **Deployment**: GitHub Pages for static hosting; compatible with Vercel.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
+- Node.js (v18+ recommended)
+- pnpm (install globally: `npm install -g pnpm`)
+
+### Installation
+
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/mahmoudabdelaziz1993/mahmoud-abdelaziz.git
+   cd mahmoud-abdelaziz
+   ```
+
+2. Install dependencies:
+   ```
+   pnpm install
+   ```
+
+### Running Locally
+
+Run the development server:
+
+```
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser. The site auto-updates on file changes.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+For production build:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+pnpm build
+pnpm start
+```
 
-## Learn More
+### Deployment
 
-To learn more about Next.js, take a look at the following resources:
+- **GitHub Pages**: Configure in repo settings for automatic deployment from the `main` branch.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Folder Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `app/`: Main application routes and pages (e.g., `page.tsx` for home).
+- `components/`: Reusable UI components (e.g., Hero, Certifications).
+- `data/`: Static data files (e.g., JSON for content).
+- `lib/`: Utilities and themes.
+- `public/`: Static assets like images.
+- `registry/`: Shadcn UI component registry.
 
-## Deploy on Vercel
+## About Me
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Senior Frontend Developer based in Cairo, Egypt (willing to relocate to UAE or Saudi Arabia). Specializing in building scalable SaaS dashboards and e-commerce storefronts. Key experiences include:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Architecting multi-tenant SaaS with Next.js at Sllm (Riyadh, Remote).
+- Optimizing SEO and performance at E2E County.
+- Developing reusable component libraries at U100.
+
+Technical Skills: JavaScript/ES6+, TypeScript, React.js, Next.js, Tailwind CSS, Redux Toolkit, Node.js, and more.
+
+Certifications: Udacity React Nanodegree, freeCodeCamp (JavaScript Algorithms, Responsive Web Design, Front-end Libraries).
+
+LinkedIn: [linkedin.com/in/mahmoud-abdelaziz-salama](https://linkedin.com/in/mahmoud-abdelaziz-salama)  
+GitHub: [github.com/mahmoudabdelaziz1993](https://github.com/mahmoudabdelaziz1993)  
+Email: mahmoudabdelaziz1993@outlook.com
+
+## Contributing
+
+Feedback and contributions welcome! Fork the repo, create a branch, and submit a pull request.
+
+## License
+
+MIT License. See [LICENSE](LICENSE) for details.
