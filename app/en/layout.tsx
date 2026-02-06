@@ -30,7 +30,6 @@ export default function EnLayout({
                     crossOrigin="anonymous"
                     src="https://tweakcn.com/live-preview.min.js"
                 />
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0690135DY"></script>
                 <Script
                     strategy="afterInteractive"
                     src={`https://www.googletagmanager.com/gtag/js?id=G-H0690135DY`}
